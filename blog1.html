@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. https://www.webflow.com --><!-- Last Published: Thu Jul 20 2023 10:18:50 GMT+0000 (Coordinated Universal Time) -->
+<html data-wf-domain="hedda-template.webflow.io" data-wf-page="64426c1f54e545ca46b7714d"
+    data-wf-site="64426c1f54e5450712b7713b">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Blog</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Webflow" name="generator" />
+    <link href="Style.css"
+        rel="stylesheet" type="text/css" />
+    <script
+        type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);</script>
+    <link href="Images\Branding Company logo.svg"
+        rel="shortcut icon" type="image/x-icon" />
+    <link href="Images\Branding Company logo.svg"
+        rel="apple-touch-icon" /><!-- Please keep this css code to improve the font quality-->
+    <style>
+        * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+    <script
+        type="text/javascript">window.__WEBFLOW_CURRENCY_SETTINGS = { "currencyCode": "USD", "symbol": "$", "decimal": ".", "fractionDigits": 2, "group": ",", "template": "{{wf {\"path\":\"symbol\",\"type\":\"PlainText\"} }} {{wf {\"path\":\"amount\",\"type\":\"CommercePrice\"} }} {{wf {\"path\":\"currencyCode\",\"type\":\"PlainText\"} }}", "hideDecimalForWholeNumbers": false };</script>
+</head>
+
+<body class="body">
+    <div class="page-wrapper">
+        <div class="global-styles w-embed">
+            <style>
+                * {
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                }
+
+                /* Snippet gets rid of top margin on first element in any rich text*/
+                .w-richtext>:first-child {
+                    margin-top: 0;
+                }
+
+                /* Snippet gets rid of bottom margin on last element in any rich text*/
+                .w-richtext>:last-child,
+                .w-richtext ol li:last-child,
+                .w-richtext ul li:last-child {
+                    margin-bottom: 0;
+                }
+
+                /*
+     * Cursor
+     */
+
+                .cursor-wrapper {
+                    pointer-events: none;
+                }
+
+                /*
+     * Reset buttons, and links styles
+     */
+
+                a {
+                    color: inherit;
+                    text-decoration: inherit;
+                    font-size: inherit;
+                }
+
+                /*
+     * Blog Posts Preview
+     */
+
+                @media (min-width: 480px) and (max-width: 991px) {
+
+                    .post-related-grid>*:nth-child(3n) {
+                        display: none;
+                    }
+
+                }
+            </style>
+        </div>
+        <main class="main-wrapper">
+            <header id="header" class="header">
+                <div class="navbar-wrapper">
+                    <div class="navbar">
+                        <header class="navbar-inner">
+                            <div id="w-node-cf665aa7-612c-9713-0917-12f535c66615-35c6660f" class="navbar-left">
+                                <div class="navbar-logo"><a href="Home.html" aria-current="page"
+                                        class="w-inline w--current"><img
+                                            src="Images\Branding Company logo.svg"
+                                            loading="eager" alt="Logo" class="navbar-logo-image" /></a></div>
+                            </div>
+                            <div id="w-node-cf665aa7-612c-9713-0917-12f535c66629-35c6660f" class="navbar-right">
+                                <nav class="navbar-menu"><a href="services.html"
+                                        class="navbar-menu-item-link w-inline-block">
+                                        <div class="navbar-menu-item-inner">
+                                            <div class="navbar-menu-item-text">Services</div>
+                                            <div class="navbar-menu-item-text-hover">Services</div>
+                                        </div>
+                                    </a><a href="work.html" class="navbar-menu-item-link w-inline-block">
+                                        <div class="navbar-menu-item-inner">
+                                            <div class="navbar-menu-item-text">Work</div>
+                                            <div class="navbar-menu-item-text-hover">Work</div>
+                                        </div>
+                                    </a><a href="About.html" class="navbar-menu-item-link w-inline-block">
+                                        <div class="navbar-menu-item-inner">
+                                            <div class="navbar-menu-item-text">About</div>
+                                            <div class="navbar-menu-item-text-hover">About</div>
+                                        </div>
+                                    </a><a href="blog.html" class="navbar-menu-item-link w-inline-block">
+                                        <div class="navbar-menu-item-inner">
+                                            <div class="navbar-menu-item-text">Blog</div>
+                                            <div class="navbar-menu-item-text-hover">Blog</div>
+                                        </div>
+                                    </a>
+                                    <div data-hover="true" data-delay="0"
+                                        class="navbar-dropdown-wrapper hide-tablet w-dropdown">
+                                        
+                                            <div class="navbar-menu-item-icon w-embed">
+                                                   
+                                                    
+                                                       
+                                             
+                                        </div>
+                                        <nav class="navbar-dropdown w-dropdown-list">
+                                            <div class="navbar-dropdown-inner">
+                                                <div id="w-node-_8fae9e49-7035-fa2b-2431-96caefc9f1b6-35c6660f"
+                                                    class="navbar-dropdown-column">
+                                                    <div class="margin-bottom margin-medium">
+                                                       
+                                                    </div>
+                                     <div id="w-node-_3653f36e-f487-e3f3-0d83-84d483b7a19d-35c6660f"
+                                                    class="navbar-dropdown-column">
+                                                    </a></div>
+                                                </div>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                </nav>
+                                <div class="navbar-right-button"><a href="Contact.html"
+                                        class="button primary small w-inline-block">
+                                        <div class="button-inner">
+                                            <div class="button-inner-text">Let&#x27;s Talk</div>
+                                            <div class="button-inner-text-hover">Let&#x27;s Talk</div>
+                                        </div>
+                                    </a></div>
+                                <div data-node-type="commerce-cart-wrapper" data-open-product=""
+                                    data-wf-cart-type="modal" data-wf-cart-query="query Dynamo2 {
+      
+                                <div class="mobile-menu-toggle">
+                                    <div class="mobile-menu-toggle-inner">
+                                        <div class="mobile-menu-toggle-line _01"></div>
+                                        <div class="mobile-menu-toggle-line _02"></div>
+                                        <div class="mobile-menu-toggle-line _03"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                    </div>
+                </div>
+                
+                <div class="mobile-menu">
+                    <div class="mobile-menu-wrapper">
+                        <div class="mobile-menu-nav"><a href="work.html" aria-current="page"
+                                class="mobile-menu-nav-link w-inline-block w--current">
+                                <div class="mobile-menu-nav-text">Work</div>
+                            </a><a href="services.html" class="mobile-menu-nav-link w-inline-block">
+                                <div class="mobile-menu-nav-text">Services</div>
+                            </a><a href="About.html" class="mobile-menu-nav-link w-inline-block">
+                                <div class="mobile-menu-nav-text">About</div>
+                            </a><a href="blog.html" class="mobile-menu-nav-link w-inline-block">
+                                <div class="mobile-menu-nav-text">Blog</div>
+                            </a>
+                            </a>
+                            </a><a href="Contact.html" class="mobile-menu-nav-link w-inline-block">
+                                <div class="mobile-menu-nav-text">Contact</div>
+                            </a>
+                            <div class="mobile-menu-button-wrapper"><a href="" target="_blank"
+                                    >
+                                    <div class="button-inner">
+                                        <div class="button-inner-inner">
+                                            
+                                        </div>
+                                        <div class="button-inner-icon-wrapper">
+                                            <div class="button-inner-icon w-embed"></div>
+                                        </div>
+                                    </div>
+                                </a></div>
+                        </div>
+                    </div>
+                </div>
+            </header>   
+            <div class="section-post">
+                <div class="padding-global">
+                    <div class="padding-top padding-medium">
+                        <div class="post-grid">
+                            <div id="w-node-_7cafc331-b81a-8dbe-3e3d-e6c954c38fcc-46b7714d">
+                                <div class="blog-posts-grid-left-sticky">
+                                    <div class="hide-tablet">
+                                        <div class="margin-bottom margin-xsmall"><a href="blog.html"
+                                                class="button muted small w-inline-block">
+                                                <div class="button-inner">
+                                                    <div class="button-inner-text">Go Back</div>
+                                                    <div class="button-inner-text-hover">Go Back</div>
+                                                </div>
+                                            </a></div>
+                                        <div class="margin-bottom margin-xsmall">
+                                            <h1 id="w-node-_11b03b60-e871-aaba-9a2d-58a66b6bd0f3-46b7714d"
+                                                class="heading-style-h2 text-style-allcaps">The Power of Storytelling in
+                                                Branding</h1>
+                                        </div>
+                                        <div class="margin-bottom margin-small">
+                                            <div class="text-size-medium">Consistency is key when it comes to building a
+                                                strong brand identity. In this post, we&#x27;ll discuss the importance
+                                                of maintaining consistency across all touchpoints, from the logo to the
+                                                packaging to the tone of voice, and provide tips for achieving
+                                                consistency in your branding efforts.</div>
+                                        </div>
+                                        <div class="margin-bottom margin-medium">
+                                            <div class="post-meta">
+                                                <div class="card muted">
+                                                    <div class="card-padding xsmall horizontal-stretch">
+                                                        <div class="text-meta">Date</div>
+                                                        <div class="text-meta">April 26, 2023</div>
+                                                    </div>
+                                                </div>
+                                                <div class="card muted">
+                                                    <div class="card-padding xsmall horizontal-stretch">
+                                                        <div class="text-meta">Category</div>
+                                                        <div class="text-meta">Marketing Products</div>
+                                                    </div>
+                                                </div>
+                                                <div class="card muted">
+                                                    <div class="card-padding xsmall horizontal-stretch">
+                                                        <div class="text-meta">Reading Time</div>
+                                                        <div class="text-meta">8 Min</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="margin-bottom margin-small">
+                                        <div class="padding-horizontal padding-xsmall">
+                                            <h2 class="text-meta">Share</h2>
+                                        </div>
+                                    </div>
+                                    <div class="margin-bottom margin-medium">
+                                        <div class="post-share-grid"><a href="https://twitter.com/JavansDalmas?t=94hF9mxNLG0ERfaApIMWPA&s=08" class="post-share-item w-inline-block">
+                                                <div class="icon-1x1-xsmall w-embed"><svg width="18" height="18"
+                                                        viewBox="0 0 19 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M17.9289 4.90075C17.8972 4.82419 17.8435 4.75869 17.7748 4.71242C17.706 4.66615 17.6251 4.64117 17.5422 4.64059H15.3203C15.0457 4.13619 14.6417 3.71401 14.1499 3.41743C13.6581 3.12086 13.0962 2.96059 12.5219 2.95309C11.6591 2.94934 10.8299 3.28756 10.2158 3.89373C9.60171 4.4999 9.25278 5.32464 9.24535 6.18747V6.79919C6.2641 6.08903 3.80316 3.66325 3.77504 3.64216C3.72083 3.58865 3.65315 3.55081 3.57917 3.53266C3.5052 3.51451 3.42769 3.51673 3.35487 3.53908C3.28205 3.56143 3.21665 3.60308 3.16559 3.6596C3.11453 3.71613 3.07973 3.78542 3.06488 3.86013C2.45316 7.207 3.45863 9.44294 4.40785 10.7297C4.91129 11.4186 5.52972 12.0156 6.23597 12.4945C5.14613 13.8164 3.35316 14.5054 3.33207 14.5125C3.27216 14.5345 3.21816 14.5701 3.17425 14.6165C3.13035 14.6628 3.09773 14.7186 3.07894 14.7797C3.05899 14.8392 3.05305 14.9025 3.06159 14.9647C3.07013 15.0269 3.09291 15.0863 3.12816 15.1383C3.19847 15.2437 3.88754 16.1718 6.29222 16.1718C11.193 16.1718 15.2922 12.382 15.686 7.51638L17.8375 5.35778C17.8985 5.30064 17.9401 5.22587 17.9565 5.14392C17.9729 5.06197 17.9633 4.97695 17.9289 4.90075ZM14.9758 7.03122C14.9027 7.10419 14.86 7.20219 14.8563 7.30544C14.568 11.8054 10.8063 15.3281 6.29222 15.3281C5.31488 15.3281 4.6891 15.1593 4.31644 14.9906C5.11097 14.5898 6.41176 13.8023 7.20629 12.607C7.23794 12.5574 7.25924 12.502 7.26891 12.444C7.27857 12.386 7.27641 12.3266 7.26254 12.2695C7.24755 12.211 7.22038 12.1564 7.18282 12.1091C7.14526 12.0619 7.09815 12.0231 7.04457 11.9953C7.0305 11.9953 5.97582 11.4468 5.06175 10.1953C3.97191 8.70466 3.543 6.88356 3.78207 4.78122C4.80863 5.65309 7.02347 7.29841 9.59691 7.72731C9.65748 7.73882 9.71985 7.73668 9.77949 7.72105C9.83913 7.70542 9.89453 7.67669 9.94167 7.63696C9.98881 7.59722 10.0265 7.54748 10.052 7.49135C10.0775 7.43522 10.0902 7.37411 10.0891 7.31247V6.18747C10.0947 5.55028 10.3522 4.9412 10.8054 4.49327C11.2586 4.04533 11.8706 3.79496 12.5078 3.79684C12.9683 3.80349 13.4171 3.94219 13.801 4.19646C14.1849 4.45073 14.4877 4.80988 14.6735 5.23122C14.7056 5.30701 14.7595 5.37155 14.8283 5.41663C14.8972 5.4617 14.9779 5.48527 15.0602 5.48434H16.5227L14.9758 7.03122Z"
+                                                            fill="currentColor" />
+                                                    </svg></div>
+                                            </a><a href="https://instagram.com/javansdalmas?igshid=ZDc4ODBmNjlmNQ==" class="post-share-item w-inline-block">
+                                                <div class="icon-1x1-xsmall w-embed"><svg width="18" height="18"
+                                                        viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M10 6.73975C9.28922 6.73975 8.59441 6.95052 8.00342 7.3454C7.41243 7.74029 6.95181 8.30156 6.67981 8.95823C6.40781 9.6149 6.33664 10.3375 6.4753 11.0346C6.61397 11.7317 6.95624 12.3721 7.45884 12.8747C7.96143 13.3773 8.60178 13.7195 9.29889 13.8582C9.99601 13.9969 10.7186 13.9257 11.3753 13.6537C12.0319 13.3817 12.5932 12.9211 12.9881 12.3301C13.383 11.7391 13.5938 11.0443 13.5938 10.3335C13.5938 9.38037 13.2151 8.46629 12.5412 7.79233C11.8672 7.11837 10.9531 6.73975 10 6.73975ZM10 12.9897C9.47464 12.9897 8.96108 12.834 8.52427 12.5421C8.08745 12.2502 7.74699 11.8354 7.54595 11.35C7.3449 10.8646 7.2923 10.3305 7.39479 9.81529C7.49728 9.30003 7.75026 8.82673 8.12175 8.45524C8.49323 8.08376 8.96653 7.83078 9.48179 7.72828C9.99705 7.62579 10.5311 7.6784 11.0165 7.87944C11.5019 8.08049 11.9167 8.42094 12.2086 8.85776C12.5005 9.29458 12.6562 9.80814 12.6562 10.3335C12.6542 11.0373 12.3737 11.7118 11.876 12.2095C11.3783 12.7072 10.7038 12.9877 10 12.9897ZM13.4375 2.67725H6.5625C5.44362 2.67725 4.37056 3.12172 3.57939 3.91289C2.78822 4.70406 2.34375 5.77711 2.34375 6.896V13.771C2.34375 14.8899 2.78822 15.9629 3.57939 16.7541C4.37056 17.5453 5.44362 17.9897 6.5625 17.9897H13.4375C14.5564 17.9897 15.6294 17.5453 16.4206 16.7541C17.2118 15.9629 17.6562 14.8899 17.6562 13.771V6.896C17.6562 5.77711 17.2118 4.70406 16.4206 3.91289C15.6294 3.12172 14.5564 2.67725 13.4375 2.67725ZM16.7188 13.771C16.7188 14.6412 16.373 15.4758 15.7577 16.0912C15.1423 16.7065 14.3077 17.0522 13.4375 17.0522H6.5625C5.69226 17.0522 4.85766 16.7065 4.24231 16.0912C3.62695 15.4758 3.28125 14.6412 3.28125 13.771V6.896C3.28125 6.02575 3.62695 5.19116 4.24231 4.5758C4.85766 3.96045 5.69226 3.61475 6.5625 3.61475H13.4375C14.3077 3.61475 15.1423 3.96045 15.7577 4.5758C16.373 5.19116 16.7188 6.02575 16.7188 6.896V13.771ZM14.8438 6.271C14.8438 6.42551 14.7979 6.57656 14.7121 6.70504C14.6262 6.83351 14.5042 6.93365 14.3615 6.99278C14.2187 7.05191 14.0616 7.06738 13.9101 7.03723C13.7585 7.00709 13.6193 6.93268 13.5101 6.82342C13.4008 6.71416 13.3264 6.57496 13.2963 6.42341C13.2661 6.27186 13.2816 6.11478 13.3407 5.97202C13.3998 5.82927 13.5 5.70726 13.6285 5.62141C13.7569 5.53557 13.908 5.48975 14.0625 5.48975C14.2697 5.48975 14.4684 5.57206 14.6149 5.71857C14.7614 5.86508 14.8438 6.0638 14.8438 6.271Z"
+                                                            fill="currentColor" />
+                                                    </svg></div>
+                                            </a><a href="https://www.facebook.com/javans.dalmas?mibextid=ZbWKwL" class="post-share-item w-inline-block">
+                                                <div class="icon-1x1-xsmall w-embed"><svg width="18" height="18"
+                                                        viewBox="0 0 19 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M16.5059 9C16.5059 7.58154 16.0852 6.19493 15.2972 5.01552C14.5091 3.83611 13.389 2.91688 12.0785 2.37405C10.7681 1.83123 9.32603 1.68921 7.93482 1.96593C6.54362 2.24266 5.26571 2.92572 4.26271 3.92872C3.2597 4.93173 2.57665 6.20963 2.29992 7.60084C2.02319 8.99205 2.16522 10.4341 2.70804 11.7446C3.25086 13.055 4.1701 14.1751 5.34951 14.9632C6.52892 15.7513 7.91552 16.1719 9.33399 16.1719C11.2355 16.17 13.0586 15.4138 14.4032 14.0692C15.7478 12.7246 16.504 10.9015 16.5059 9ZM9.75586 15.3141V10.5469H11.584C11.6959 10.5469 11.8032 10.5024 11.8823 10.4233C11.9614 10.3442 12.0059 10.2369 12.0059 10.125C12.0059 10.0131 11.9614 9.90581 11.8823 9.82669C11.8032 9.74758 11.6959 9.70313 11.584 9.70313H9.75586V7.875C9.75771 7.53991 9.89164 7.21906 10.1286 6.98211C10.3655 6.74516 10.6864 6.61122 11.0215 6.60938H12.1465C12.2584 6.60938 12.3657 6.56493 12.4448 6.48581C12.5239 6.4067 12.5684 6.29939 12.5684 6.1875C12.5684 6.07561 12.5239 5.96831 12.4448 5.88919C12.3657 5.81008 12.2584 5.76563 12.1465 5.76563H11.0215C10.4626 5.76748 9.92717 5.99031 9.53198 6.3855C9.1368 6.78068 8.91397 7.31613 8.91211 7.875V9.70313H7.08399C6.9721 9.70313 6.86479 9.74758 6.78568 9.82669C6.70656 9.90581 6.66211 10.0131 6.66211 10.125C6.66211 10.2369 6.70656 10.3442 6.78568 10.4233C6.86479 10.5024 6.9721 10.5469 7.08399 10.5469H8.91211V15.3141C7.27399 15.2046 5.74252 14.4628 4.64112 13.2453C3.53973 12.0277 2.95463 10.4298 3.00938 8.78896C3.06414 7.1481 3.75447 5.59274 4.93458 4.45135C6.11469 3.30996 7.69221 2.67189 9.33399 2.67189C10.9758 2.67189 12.5533 3.30996 13.7334 4.45135C14.9135 5.59274 15.6038 7.1481 15.6586 8.78896C15.7133 10.4298 15.1282 12.0277 14.0269 13.2453C12.9255 14.4628 11.394 15.2046 9.75586 15.3141Z"
+                                                            fill="currentColor" />
+                                                    </svg></div>
+                                            </a></div>
+                                    </div>
+                                    <div class="margin-bottom margin-small">
+                                        <div class="padding-horizontal padding-xsmall">
+                                            <h2 class="text-meta">Author</h2>
+                                        </div>
+                                    </div>
+                                    <div class="margin-bottom margin-medium">
+                                        <div class="card muted">
+                                            <div class="card-padding xsmall">
+                                                <div class="post-author-grid">
+                                                    <div id="w-node-_40f2451b-b197-8394-4fb2-3199b33c455f-46b7714d"
+                                                        class="image-wrapper border-radius-small">
+                                                            </div>
+                                                    <div id="w-node-_40f2451b-b197-8394-4fb2-3199b33c4561-46b7714d"
+                                                        class="post-author-grid-content">
+                                                        <div>
+                                                            <h3 class="text-meta">Dalmas Javans</h3>
+                                                            <div class="text-size-small text-color-muted">Director Nyateng Brands</div>
+                                                        </div>
+                                                        <div class="subnav xsmall"><a href="https://twitter.com/JavansDalmas?t=94hF9mxNLG0ERfaApIMWPA&s=08"
+                                                                class="badge-link inverse-primary small w-inline-block">
+                                                                <div class="icon-1x1-xxsmall w-embed"><svg width="16"
+                                                                        height="16" viewBox="0 0 19 18" fill="none"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M17.9289 4.90075C17.8972 4.82419 17.8435 4.75869 17.7748 4.71242C17.706 4.66615 17.6251 4.64117 17.5422 4.64059H15.3203C15.0457 4.13619 14.6417 3.71401 14.1499 3.41743C13.6581 3.12086 13.0962 2.96059 12.5219 2.95309C11.6591 2.94934 10.8299 3.28756 10.2158 3.89373C9.60171 4.4999 9.25278 5.32464 9.24535 6.18747V6.79919C6.2641 6.08903 3.80316 3.66325 3.77504 3.64216C3.72083 3.58865 3.65315 3.55081 3.57917 3.53266C3.5052 3.51451 3.42769 3.51673 3.35487 3.53908C3.28205 3.56143 3.21665 3.60308 3.16559 3.6596C3.11453 3.71613 3.07973 3.78542 3.06488 3.86013C2.45316 7.207 3.45863 9.44294 4.40785 10.7297C4.91129 11.4186 5.52972 12.0156 6.23597 12.4945C5.14613 13.8164 3.35316 14.5054 3.33207 14.5125C3.27216 14.5345 3.21816 14.5701 3.17425 14.6165C3.13035 14.6628 3.09773 14.7186 3.07894 14.7797C3.05899 14.8392 3.05305 14.9025 3.06159 14.9647C3.07013 15.0269 3.09291 15.0863 3.12816 15.1383C3.19847 15.2437 3.88754 16.1718 6.29222 16.1718C11.193 16.1718 15.2922 12.382 15.686 7.51638L17.8375 5.35778C17.8985 5.30064 17.9401 5.22587 17.9565 5.14392C17.9729 5.06197 17.9633 4.97695 17.9289 4.90075ZM14.9758 7.03122C14.9027 7.10419 14.86 7.20219 14.8563 7.30544C14.568 11.8054 10.8063 15.3281 6.29222 15.3281C5.31488 15.3281 4.6891 15.1593 4.31644 14.9906C5.11097 14.5898 6.41176 13.8023 7.20629 12.607C7.23794 12.5574 7.25924 12.502 7.26891 12.444C7.27857 12.386 7.27641 12.3266 7.26254 12.2695C7.24755 12.211 7.22038 12.1564 7.18282 12.1091C7.14526 12.0619 7.09815 12.0231 7.04457 11.9953C7.0305 11.9953 5.97582 11.4468 5.06175 10.1953C3.97191 8.70466 3.543 6.88356 3.78207 4.78122C4.80863 5.65309 7.02347 7.29841 9.59691 7.72731C9.65748 7.73882 9.71985 7.73668 9.77949 7.72105C9.83913 7.70542 9.89453 7.67669 9.94167 7.63696C9.98881 7.59722 10.0265 7.54748 10.052 7.49135C10.0775 7.43522 10.0902 7.37411 10.0891 7.31247V6.18747C10.0947 5.55028 10.3522 4.9412 10.8054 4.49327C11.2586 4.04533 11.8706 3.79496 12.5078 3.79684C12.9683 3.80349 13.4171 3.94219 13.801 4.19646C14.1849 4.45073 14.4877 4.80988 14.6735 5.23122C14.7056 5.30701 14.7595 5.37155 14.8283 5.41663C14.8972 5.4617 14.9779 5.48527 15.0602 5.48434H16.5227L14.9758 7.03122Z"
+                                                                            fill="currentColor" />
+                                                                    </svg></div>
+                                                            </a><a href="https://instagram.com/javansdalmas?igshid=ZDc4ODBmNjlmNQ=="
+                                                                class="badge-link inverse-primary small w-inline-block">
+                                                                <div class="icon-1x1-xxsmall w-embed"><svg width="16"
+                                                                        height="16" viewBox="0 0 20 21" fill="none"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M10 6.73975C9.28922 6.73975 8.59441 6.95052 8.00342 7.3454C7.41243 7.74029 6.95181 8.30156 6.67981 8.95823C6.40781 9.6149 6.33664 10.3375 6.4753 11.0346C6.61397 11.7317 6.95624 12.3721 7.45884 12.8747C7.96143 13.3773 8.60178 13.7195 9.29889 13.8582C9.99601 13.9969 10.7186 13.9257 11.3753 13.6537C12.0319 13.3817 12.5932 12.9211 12.9881 12.3301C13.383 11.7391 13.5938 11.0443 13.5938 10.3335C13.5938 9.38037 13.2151 8.46629 12.5412 7.79233C11.8672 7.11837 10.9531 6.73975 10 6.73975ZM10 12.9897C9.47464 12.9897 8.96108 12.834 8.52427 12.5421C8.08745 12.2502 7.74699 11.8354 7.54595 11.35C7.3449 10.8646 7.2923 10.3305 7.39479 9.81529C7.49728 9.30003 7.75026 8.82673 8.12175 8.45524C8.49323 8.08376 8.96653 7.83078 9.48179 7.72828C9.99705 7.62579 10.5311 7.6784 11.0165 7.87944C11.5019 8.08049 11.9167 8.42094 12.2086 8.85776C12.5005 9.29458 12.6562 9.80814 12.6562 10.3335C12.6542 11.0373 12.3737 11.7118 11.876 12.2095C11.3783 12.7072 10.7038 12.9877 10 12.9897ZM13.4375 2.67725H6.5625C5.44362 2.67725 4.37056 3.12172 3.57939 3.91289C2.78822 4.70406 2.34375 5.77711 2.34375 6.896V13.771C2.34375 14.8899 2.78822 15.9629 3.57939 16.7541C4.37056 17.5453 5.44362 17.9897 6.5625 17.9897H13.4375C14.5564 17.9897 15.6294 17.5453 16.4206 16.7541C17.2118 15.9629 17.6562 14.8899 17.6562 13.771V6.896C17.6562 5.77711 17.2118 4.70406 16.4206 3.91289C15.6294 3.12172 14.5564 2.67725 13.4375 2.67725ZM16.7188 13.771C16.7188 14.6412 16.373 15.4758 15.7577 16.0912C15.1423 16.7065 14.3077 17.0522 13.4375 17.0522H6.5625C5.69226 17.0522 4.85766 16.7065 4.24231 16.0912C3.62695 15.4758 3.28125 14.6412 3.28125 13.771V6.896C3.28125 6.02575 3.62695 5.19116 4.24231 4.5758C4.85766 3.96045 5.69226 3.61475 6.5625 3.61475H13.4375C14.3077 3.61475 15.1423 3.96045 15.7577 4.5758C16.373 5.19116 16.7188 6.02575 16.7188 6.896V13.771ZM14.8438 6.271C14.8438 6.42551 14.7979 6.57656 14.7121 6.70504C14.6262 6.83351 14.5042 6.93365 14.3615 6.99278C14.2187 7.05191 14.0616 7.06738 13.9101 7.03723C13.7585 7.00709 13.6193 6.93268 13.5101 6.82342C13.4008 6.71416 13.3264 6.57496 13.2963 6.42341C13.2661 6.27186 13.2816 6.11478 13.3407 5.97202C13.3998 5.82927 13.5 5.70726 13.6285 5.62141C13.7569 5.53557 13.908 5.48975 14.0625 5.48975C14.2697 5.48975 14.4684 5.57206 14.6149 5.71857C14.7614 5.86508 14.8438 6.0638 14.8438 6.271Z"
+                                                                            fill="currentColor" />
+                                                                    </svg></div>
+                                                            </a><a href="https://www.facebook.com/javans.dalmas?mibextid=ZbWKwL"
+                                                                class="badge-link inverse-primary small w-inline-block">
+                                                                <div class="icon-1x1-xxsmall w-embed"><svg width="16"
+                                                                        height="16" viewBox="0 0 19 18" fill="none"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M16.5059 9C16.5059 7.58154 16.0852 6.19493 15.2972 5.01552C14.5091 3.83611 13.389 2.91688 12.0785 2.37405C10.7681 1.83123 9.32603 1.68921 7.93482 1.96593C6.54362 2.24266 5.26571 2.92572 4.26271 3.92872C3.2597 4.93173 2.57665 6.20963 2.29992 7.60084C2.02319 8.99205 2.16522 10.4341 2.70804 11.7446C3.25086 13.055 4.1701 14.1751 5.34951 14.9632C6.52892 15.7513 7.91552 16.1719 9.33399 16.1719C11.2355 16.17 13.0586 15.4138 14.4032 14.0692C15.7478 12.7246 16.504 10.9015 16.5059 9ZM9.75586 15.3141V10.5469H11.584C11.6959 10.5469 11.8032 10.5024 11.8823 10.4233C11.9614 10.3442 12.0059 10.2369 12.0059 10.125C12.0059 10.0131 11.9614 9.90581 11.8823 9.82669C11.8032 9.74758 11.6959 9.70313 11.584 9.70313H9.75586V7.875C9.75771 7.53991 9.89164 7.21906 10.1286 6.98211C10.3655 6.74516 10.6864 6.61122 11.0215 6.60938H12.1465C12.2584 6.60938 12.3657 6.56493 12.4448 6.48581C12.5239 6.4067 12.5684 6.29939 12.5684 6.1875C12.5684 6.07561 12.5239 5.96831 12.4448 5.88919C12.3657 5.81008 12.2584 5.76563 12.1465 5.76563H11.0215C10.4626 5.76748 9.92717 5.99031 9.53198 6.3855C9.1368 6.78068 8.91397 7.31613 8.91211 7.875V9.70313H7.08399C6.9721 9.70313 6.86479 9.74758 6.78568 9.82669C6.70656 9.90581 6.66211 10.0131 6.66211 10.125C6.66211 10.2369 6.70656 10.3442 6.78568 10.4233C6.86479 10.5024 6.9721 10.5469 7.08399 10.5469H8.91211V15.3141C7.27399 15.2046 5.74252 14.4628 4.64112 13.2453C3.53973 12.0277 2.95463 10.4298 3.00938 8.78896C3.06414 7.1481 3.75447 5.59274 4.93458 4.45135C6.11469 3.30996 7.69221 2.67189 9.33399 2.67189C10.9758 2.67189 12.5533 3.30996 13.7334 4.45135C14.9135 5.59274 15.6038 7.1481 15.6586 8.78896C15.7133 10.4298 15.1282 12.0277 14.0269 13.2453C12.9255 14.4628 11.394 15.2046 9.75586 15.3141Z"
+                                                                            fill="currentColor" />
+                                                                    </svg></div>
+                                                            </a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="margin-bottom margin-small">
+                                        <div class="padding-horizontal padding-xsmall">
+                                            <h2 class="text-meta">Related News</h2>
+                                        </div>
+                                    </div>
+                                    <div class="margin-bottom margin-small">
+                                        <div class="w-dyn-list">
+                                            <div role="list" class="blog-posts-popular w-dyn-items">
+                                                <div role="listitem" class="w-dyn-item"><a
+                                                        href="blog2.html"
+                                                        aria-current="page"
+                                                        class="card-link muted w-inline-block w--current">
+                                                        <div class="card-padding xsmall">
+                                                            <div class="posts-preview-small-wrapper">
+                                                                <div id="w-node-e6a2ff5f-8f02-1a45-b036-397f22479963-46b7714d"
+                                                                    class="image-wrapper border-radius-small"><img
+                                                                        src="Images\Blog3.jpg"
+                                                                        loading="lazy"
+                                                                        alt="The Power of Storytelling in Branding"
+                                                                        sizes="(max-width: 479px) 100px, 120px"
+                                                                        srcset="Images\Blog3.jpg 500w, Images\Blog3.jpg 800w, Images\Blog3.jpg 1080w, Images\Blog3.jpg 1600w"
+                                                                        class="image-cover" /></div>
+                                                                <div id="w-node-e6a2ff5f-8f02-1a45-b036-397f22479965-46b7714d"
+                                                                    class="posts-preview-small-content">
+                                                                    <div>
+                                                                        <h3 class="text-meta">From Eye-Catching to Profit-Generating: Unraveling the Science of Effective Banner and Signage Strategies</h3>
+                                                                        <div class="text-size-small text-color-muted">
+                                                                            Boosting Business with Effective Banner and Signage Techniques.</div>
+                                                                    </div>
+                                                                    <div class="label inverse-primary">
+                                                                        <div class="label-text">Banner and Signage</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hide-tablet">
+                                        <div class="card primary">
+                                            <div class="card-padding small">
+                                                <div class="margin-bottom margin-small">
+                                                    <h3 class="heading-style-h4 text-style-allcaps">Get the inside scoop
+                                                        on industry trends</h3>
+                                                </div>
+                                                <div class="newsletter-form-wrapper w-form">
+                                                    <form id="wf-form-Newsletter-Form" name="wf-form-Newsletter-Form"
+                                                        data-name="Newsletter Form" method="get"
+                                                        class="cta-newsletter-small-form"
+                                                        data-wf-page-id="64426c1f54e545ca46b7714d"
+                                                        data-wf-element-id="3fbe4847-7b8f-00dc-ca01-70108c5e893b"><input
+                                                            type="email" class="form-input inverse w-input"
+                                                            maxlength="256" name="Email-3" data-name="Email 3"
+                                                            placeholder="Your Email" id="Email-3" required="" /><input
+                                                            type="submit" value="Subscribe" data-wait="Please wait..."
+                                                            class="button inverse-primary w-button" /></form>
+                                                    <div class="form-message-success w-form-done">
+                                                        <div>Thank you! Your submission has been received!</div>
+                                                    </div>
+                                                    <div class="form-message-error w-form-fail">
+                                                        <div>Oops! Something went wrong while submitting the form.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="w-node-_7cafc331-b81a-8dbe-3e3d-e6c954c38ff3-46b7714d">
+                                <div class="show-tablet">
+                                    <div class="margin-bottom margin-xsmall"><a href="blog.html"
+                                            class="button muted small arrow-left w-inline-block">
+                                            <div class="button-inner">
+                                                <div class="button-inner-icon-wrapper">
+                                                    <div class="button-inner-icon w-embed"><svg width="16" height="16"
+                                                            viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M20.8125 12C20.8125 12.1491 20.7532 12.2922 20.6477 12.3977C20.5423 12.5032 20.3992 12.5625 20.25 12.5625H5.10938L10.8937 18.3562C10.9455 18.4079 10.9865 18.4693 11.0145 18.5369C11.0424 18.6044 11.0568 18.6768 11.0568 18.75C11.0568 18.8231 11.0424 18.8955 11.0145 18.9631C10.9865 19.0306 10.9455 19.092 10.8937 19.1437C10.842 19.1954 10.7807 19.2364 10.7131 19.2644C10.6455 19.2924 10.5731 19.3068 10.5 19.3068C10.4269 19.3068 10.3545 19.2924 10.2869 19.2644C10.2193 19.2364 10.158 19.1954 10.1063 19.1437L3.35625 12.3937C3.30293 12.3429 3.26047 12.2818 3.23146 12.2142C3.20246 12.1465 3.1875 12.0736 3.1875 12C3.1875 11.9263 3.20246 11.8535 3.23146 11.7858C3.26047 11.7181 3.30293 11.657 3.35625 11.6062L10.1063 4.85621C10.2107 4.75178 10.3523 4.69312 10.5 4.69312C10.6477 4.69312 10.7893 4.75178 10.8937 4.85621C10.9982 4.96064 11.0568 5.10228 11.0568 5.24996C11.0568 5.39765 10.9982 5.53928 10.8937 5.64371L5.10938 11.4375H20.25C20.3992 11.4375 20.5423 11.4967 20.6477 11.6022C20.7532 11.7077 20.8125 11.8508 20.8125 12Z"
+                                                                fill="currentColor" />
+                                                        </svg></div>
+                                                </div>
+                                                <div class="button-inner-inner">
+                                                    <div class="button-inner-text">Go Back</div>
+                                                    <div class="button-inner-text-hover">Go Back</div>
+                                                </div>
+                                            </div>
+                                        </a></div>
+                                    <div class="margin-bottom margin-xsmall">
+                                        <h1 id="w-node-a3a0e57b-4a97-d696-1e1e-6b6227027b14-46b7714d"
+                                            class="heading-style-h1 text-style-allcaps">The Power of Storytelling in
+                                            Branding</h1>
+                                    </div>
+                                    <div class="margin-bottom margin-small">
+                                        <div class="text-size-medium">Consistency is key when it comes to building a
+                                            strong brand identity. In this post, we&#x27;ll discuss the importance of
+                                            maintaining consistency across all touchpoints, from the logo to the
+                                            packaging to the tone of voice, and provide tips for achieving consistency
+                                            in your branding efforts.</div>
+                                    </div>
+                                    <div class="margin-bottom margin-medium">
+                                        <div class="post-meta">
+                                            <div class="card muted">
+                                                <div class="card-padding xsmall horizontal-stretch">
+                                                    <div class="text-meta">Date</div>
+                                                    <div class="text-meta">April 26, 2023</div>
+                                                </div>
+                                            </div>
+                                            <div class="card muted">
+                                                <div class="card-padding xsmall horizontal-stretch">
+                                                    <div class="text-meta">Category</div>
+                                                    <div class="text-meta">Marketing products</div>
+                                                </div>
+                                            </div>
+                                            <div class="card muted">
+                                                <div class="card-padding xsmall horizontal-stretch">
+                                                    <div class="text-meta">Reading Time</div>
+                                                    <div class="text-meta">8 Min</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="margin-bottom margin-small">
+                                    <div class="image-wrapper"><img
+                                            src="Images\blog5.jpg"
+                                            loading="eager" alt="The Power of Storytelling in Branding"
+                                            sizes="(max-width: 479px) 90vw, (max-width: 991px) 94vw, 67vw"
+                                            srcset="Images\blog5.jpg 500w,Images\blog5.jpg 800w, Images\blog5.jpg  1080w, Images\blog5.jpg  1600w, Images\blog5.jpg  2000w"
+                                            class="image-cover-parallax" /></div>
+                                </div>
+                                <div class="post-content">
+                                    <div class="text-rich-text w-richtext">
+                                        <h3>Why Storytelling is Such a Powerful Tool</h3>
+                                        <p>As humans, we are wired to connect with stories on a deep level. From the
+                                            time we are young children, stories captivate our attention and stay with us
+                                            long after they are over. This is why storytelling is such a powerful tool
+                                            in branding. When a brand tells a compelling story, it can create an
+                                            emotional connection with its audience that is difficult to break.</p>
+                                        <p>The key to successful storytelling in branding is to create a narrative that
+                                            resonates with the target audience. This means understanding who they are,
+                                            what they care about, and what motivates them. Once you have this
+                                            understanding, you can craft a story that speaks to their needs and desires
+                                            in a meaningful way.</p>
+                                        <p>One of the most important things to keep in mind when telling a brand story
+                                            is to be authentic. Consumers today are savvy and can easily spot when a
+                                            brand is being disingenuous or trying to manipulate them. Your story needs
+                                            to be grounded in truth and be a reflection of the values that your brand
+                                            embodies.</p>
+                                        <h3>Powerful Ways to Use Storytelling</h3>
+                                        <p>Another aspect of effective storytelling is to create characters that your
+                                            audience can relate to. This can be accomplished through the use of customer
+                                            personas or by creating a brand spokesperson that embodies the values and
+                                            personality of your brand. When your audience can see themselves in the
+                                            characters of your story, it becomes more engaging and memorable.</p>
+                                        <p>One powerful way to use storytelling in branding is through the use of brand
+                                            origin stories. These stories explain the origins of a brand and the
+                                            inspiration behind its creation. By sharing these stories with consumers,
+                                            brands can create a sense of history and legacy that can be appealing to
+                                            many consumers.</p>
+                                        <p>Another way to use storytelling in branding is to create stories around your
+                                            products or services. These stories can be used to showcase the unique
+                                            features and benefits of your offerings in a way that is more engaging than
+                                            a simple list of features.</p>
+                                        <p>The use of storytelling in branding can also be used to create a sense of
+                                            community and belonging around your brand. By sharing stories of your brand
+                                            advocates or customers, you can create a sense of shared experience and
+                                            connection that can be very powerful.</p>
+                                        <h3>Analyze and Adapt</h3>
+                                        <p>One of the most effective ways to use storytelling in branding is through the
+                                            use of video. Video can be used to tell stories in a way that is immersive
+                                            and engaging, allowing your audience to feel like they are a part of the
+                                            story.</p>
+                                        <p>When using storytelling in branding, it is important to measure the impact of
+                                            your efforts. This can be done through the use of analytics to track
+                                            engagement and conversions. By understanding how your audience is responding
+                                            to your brand story, you can refine your approach and make it even more
+                                            effective.</p>
+                                        <p>In conclusion, storytelling is a powerful tool in branding that can create an
+                                            emotional connection with your audience and help to differentiate your brand
+                                            from the competition. By crafting a compelling brand story and sharing it
+                                            through various channels, you can create a sense of authenticity, community,
+                                            and belonging that can be very effective in building a strong brand.</p>
+                                        <h3>Emotional Connection</h3>
+                                        <p>One of the key benefits of storytelling in branding is that it can help to
+                                            build an emotional connection between a brand and its audience. By telling a
+                                            story that resonates with people on a personal level, a brand can create a
+                                            sense of shared experience and build trust with its customers. This
+                                            emotional connection can lead to increased loyalty and advocacy, as
+                                            customers become more invested in the brand and its story.</p>
+                                        <p>Another advantage of using storytelling in branding is that it can help to
+                                            differentiate a brand from its competitors. By telling a unique and
+                                            compelling story, a brand can create a distinct identity that sets it apart
+                                            from others in its category. This can be particularly valuable in crowded
+                                            markets, where differentiation is key to standing out and attracting
+                                            customers.</p>
+                                        <p>Storytelling can also be an effective tool for building brand awareness and
+                                            generating interest in a brand. By creating a compelling story that people
+                                            want to share with others, a brand can increase its reach and visibility.
+                                            This can be achieved through social media, where stories can be shared
+                                            widely and quickly, or through other forms of marketing, such as video or
+                                            content marketing.</p>
+                                        <h3>Additonal Benefits</h3>
+                                        <p>In addition to these benefits, storytelling in branding can also be a
+                                            powerful way to communicate a brand&#x27;s values and beliefs. By telling
+                                            stories that align with its mission and purpose, a brand can demonstrate its
+                                            commitment to its customers and its community. This can help to build trust
+                                            and credibility with consumers, who are increasingly looking for brands that
+                                            share their values.</p>
+                                        <p>Another important aspect of storytelling in branding is that it can be used
+                                            to educate customers about a brand&#x27;s products or services. By telling
+                                            stories that highlight the benefits and features of a product or service, a
+                                            brand can help to educate its customers in a more engaging and memorable way
+                                            than through traditional marketing methods. This can be particularly
+                                            effective in complex or technical industries, where storytelling can help to
+                                            simplify and humanize complex ideas.</p>
+                                        <p>Finally, it&#x27;s worth noting that storytelling in branding is not a
+                                            one-time event, but an ongoing process. Brands must continue to tell stories
+                                            that resonate with their audience and align with their mission and purpose
+                                            in order to maintain and deepen their relationships with customers. By using
+                                            storytelling as an ongoing strategy, brands can continue to build emotional
+                                            connections, differentiate themselves from their competitors, and
+                                            communicate their values and beliefs to their customers.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="section-cta-contact">
+                <div class="padding-global">
+                    <div class="padding-top padding-small">
+                        <div class="card primary">
+                            <div id="w-node-_461e76cd-d41d-f63d-62fb-7fe7a22dfe42-cbbce2eb" class="card-padding large">
+                                <div class="cta-contact-grid">
+                                    <div id="w-node-_461e76cd-d41d-f63d-62fb-7fe7a22dfe44-cbbce2eb">
+                                        <div class="margin-bottom margin-xsmall">
+                                            <h2 class="heading-style-medium text-style-allcaps">Let&#x27;s Brand</h2>
+                                        </div>
+                                        <div class="max-width-medium">
+                                            <div class="text-size-xlarge text-color-muted-inverse">Let&#x27;s create an
+                                                unforgettable brand experience together. Start your journey now.</div>
+                                        </div>
+                                    </div><a href="Contact.html"
+                                        class="button inverse-primary small arrow-top-right w-inline-block">
+                                        <div class="button-inner">
+                                            <div class="button-inner-inner">
+                                                <div class="button-inner-text">Get in Touch</div>
+                                                <div class="button-inner-text-hover">Get in Touch</div>
+                                            </div>
+                                            <div class="button-inner-icon-wrapper">
+                                                <div class="button-inner-icon w-embed"><svg width="16" height="16"
+                                                        viewBox="0 0 18 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M13.922 4.5V11.8125C13.922 11.9244 13.8776 12.0317 13.7985 12.1108C13.7193 12.1899 13.612 12.2344 13.5002 12.2344C13.3883 12.2344 13.281 12.1899 13.2018 12.1108C13.1227 12.0317 13.0783 11.9244 13.0783 11.8125V5.51953L4.79547 13.7953C4.71715 13.8736 4.61092 13.9176 4.50015 13.9176C4.38939 13.9176 4.28316 13.8736 4.20484 13.7953C4.12652 13.717 4.08252 13.6108 4.08252 13.5C4.08252 13.3892 4.12652 13.283 4.20484 13.2047L12.4806 4.92188H6.18765C6.07577 4.92188 5.96846 4.87743 5.88934 4.79831C5.81023 4.71919 5.76578 4.61189 5.76578 4.5C5.76578 4.38811 5.81023 4.28081 5.88934 4.20169C5.96846 4.12257 6.07577 4.07813 6.18765 4.07812H13.5002C13.612 4.07813 13.7193 4.12257 13.7985 4.20169C13.8776 4.28081 13.922 4.38811 13.922 4.5Z"
+                                                            fill="currentColor" />
+                                                    </svg></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="footer">
+                <div class="padding-global">
+                    <div class="padding-top padding-small">
+                        <div class="padding-bottom padding-medium">
+                            <div class="margin-bottom margin-small">
+                                <div class="footer-social-grid"><a href="https://instagram.com/javansdalmas?igshid=ZDc4ODBmNjlmNQ=="
+                                        target="_blank" class="footer-social-item w-inline-block">
+                                        <div class="button-group">
+                                            <div class="icon-1x1-small w-embed"><svg width="20" height="21"
+                                                    viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 6.73975C9.28922 6.73975 8.59441 6.95052 8.00342 7.3454C7.41243 7.74029 6.95181 8.30156 6.67981 8.95823C6.40781 9.6149 6.33664 10.3375 6.4753 11.0346C6.61397 11.7317 6.95624 12.3721 7.45884 12.8747C7.96143 13.3773 8.60178 13.7195 9.29889 13.8582C9.99601 13.9969 10.7186 13.9257 11.3753 13.6537C12.0319 13.3817 12.5932 12.9211 12.9881 12.3301C13.383 11.7391 13.5938 11.0443 13.5938 10.3335C13.5938 9.38037 13.2151 8.46629 12.5412 7.79233C11.8672 7.11837 10.9531 6.73975 10 6.73975ZM10 12.9897C9.47464 12.9897 8.96108 12.834 8.52427 12.5421C8.08745 12.2502 7.74699 11.8354 7.54595 11.35C7.3449 10.8646 7.2923 10.3305 7.39479 9.81529C7.49728 9.30003 7.75026 8.82673 8.12175 8.45524C8.49323 8.08376 8.96653 7.83078 9.48179 7.72828C9.99705 7.62579 10.5311 7.6784 11.0165 7.87944C11.5019 8.08049 11.9167 8.42094 12.2086 8.85776C12.5005 9.29458 12.6562 9.80814 12.6562 10.3335C12.6542 11.0373 12.3737 11.7118 11.876 12.2095C11.3783 12.7072 10.7038 12.9877 10 12.9897ZM13.4375 2.67725H6.5625C5.44362 2.67725 4.37056 3.12172 3.57939 3.91289C2.78822 4.70406 2.34375 5.77711 2.34375 6.896V13.771C2.34375 14.8899 2.78822 15.9629 3.57939 16.7541C4.37056 17.5453 5.44362 17.9897 6.5625 17.9897H13.4375C14.5564 17.9897 15.6294 17.5453 16.4206 16.7541C17.2118 15.9629 17.6562 14.8899 17.6562 13.771V6.896C17.6562 5.77711 17.2118 4.70406 16.4206 3.91289C15.6294 3.12172 14.5564 2.67725 13.4375 2.67725ZM16.7188 13.771C16.7188 14.6412 16.373 15.4758 15.7577 16.0912C15.1423 16.7065 14.3077 17.0522 13.4375 17.0522H6.5625C5.69226 17.0522 4.85766 16.7065 4.24231 16.0912C3.62695 15.4758 3.28125 14.6412 3.28125 13.771V6.896C3.28125 6.02575 3.62695 5.19116 4.24231 4.5758C4.85766 3.96045 5.69226 3.61475 6.5625 3.61475H13.4375C14.3077 3.61475 15.1423 3.96045 15.7577 4.5758C16.373 5.19116 16.7188 6.02575 16.7188 6.896V13.771ZM14.8438 6.271C14.8438 6.42551 14.7979 6.57656 14.7121 6.70504C14.6262 6.83351 14.5042 6.93365 14.3615 6.99278C14.2187 7.05191 14.0616 7.06738 13.9101 7.03723C13.7585 7.00709 13.6193 6.93268 13.5101 6.82342C13.4008 6.71416 13.3264 6.57496 13.2963 6.42341C13.2661 6.27186 13.2816 6.11478 13.3407 5.97202C13.3998 5.82927 13.5 5.70726 13.6285 5.62141C13.7569 5.53557 13.908 5.48975 14.0625 5.48975C14.2697 5.48975 14.4684 5.57206 14.6149 5.71857C14.7614 5.86508 14.8438 6.0638 14.8438 6.271Z"
+                                                        fill="currentColor" />
+                                                </svg></div>
+                                            <div class="text-meta">Instagram</div>
+                                        </div>
+                                        <div class="footer-social-item-icon-wrapper">
+                                            <div class="footer-social-item-icon w-embed"><svg width="18" height="18"
+                                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M18.5627 6V15.75C18.5627 15.8992 18.5034 16.0423 18.398 16.1477C18.2925 16.2532 18.1494 16.3125 18.0002 16.3125C17.851 16.3125 17.7079 16.2532 17.6025 16.1477C17.497 16.0423 17.4377 15.8992 17.4377 15.75V7.35938L6.39396 18.3937C6.28953 18.4982 6.14789 18.5568 6.00021 18.5568C5.85252 18.5568 5.71088 18.4982 5.60646 18.3937C5.50203 18.2893 5.44336 18.1477 5.44336 18C5.44336 17.8523 5.50203 17.7107 5.60646 17.6063L16.6408 6.5625H8.25021C8.10102 6.5625 7.95795 6.50324 7.85246 6.39775C7.74697 6.29226 7.68771 6.14918 7.68771 6C7.68771 5.85082 7.74697 5.70774 7.85246 5.60225C7.95795 5.49676 8.10102 5.4375 8.25021 5.4375H18.0002C18.1494 5.4375 18.2925 5.49676 18.398 5.60225C18.5034 5.70774 18.5627 5.85082 18.5627 6Z"
+                                                        fill="currentColor" />
+                                                </svg></div>
+                                        </div>
+                                    </a><a href="https://twitter.com/JavansDalmas?t=94hF9mxNLG0ERfaApIMWPA&s=08" target="_blank"
+                                        class="footer-social-item w-inline-block">
+                                        <div class="button-group">
+                                            <div class="icon-1x1-small w-embed"><svg width="20" height="20"
+                                                    viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M17.2617 4.90081C17.2299 4.82425 17.1763 4.75875 17.1075 4.71248C17.0388 4.66621 16.9579 4.64123 16.875 4.64066H14.6531C14.3785 4.13625 13.9745 3.71407 13.4827 3.41749C12.9909 3.12092 12.4289 2.96065 11.8547 2.95316C10.9918 2.9494 10.1626 3.28762 9.54855 3.89379C8.93448 4.49996 8.58554 5.3247 8.57811 6.18753V6.79925C5.59686 6.08909 3.13592 3.66331 3.1078 3.64222C3.05359 3.58871 2.98591 3.55087 2.91194 3.53272C2.83796 3.51457 2.76045 3.51679 2.68763 3.53914C2.61482 3.56149 2.54941 3.60314 2.49835 3.65966C2.4473 3.71619 2.4125 3.78548 2.39764 3.86019C1.78592 7.20706 2.79139 9.443 3.74061 10.7297C4.24405 11.4187 4.86248 12.0157 5.56874 12.4946C4.47889 13.8164 2.68592 14.5055 2.66483 14.5125C2.60493 14.5346 2.55092 14.5702 2.50702 14.6165C2.46311 14.6629 2.4305 14.7187 2.41171 14.7797C2.39175 14.8392 2.38582 14.9026 2.39435 14.9648C2.40289 15.027 2.42567 15.0864 2.46092 15.1383C2.53124 15.2438 3.2203 16.1719 5.62499 16.1719C10.5258 16.1719 14.625 12.3821 15.0187 7.51644L17.1703 5.35784C17.2313 5.3007 17.2729 5.22593 17.2893 5.14398C17.3057 5.06203 17.296 4.97701 17.2617 4.90081ZM14.3086 7.03128C14.2354 7.10425 14.1927 7.20225 14.1891 7.3055C13.9008 11.8055 10.139 15.3282 5.62499 15.3282C4.64764 15.3282 4.02186 15.1594 3.64921 14.9907C4.44374 14.5899 5.74452 13.8024 6.53905 12.6071C6.5707 12.5575 6.592 12.5021 6.60167 12.4441C6.61134 12.3861 6.60917 12.3267 6.5953 12.2696C6.58031 12.2111 6.55315 12.1564 6.51559 12.1092C6.47803 12.0619 6.43091 12.0231 6.37733 11.9953C6.36327 11.9953 5.30858 11.4469 4.39452 10.1953C3.30467 8.70472 2.87577 6.88362 3.11483 4.78128C4.14139 5.65316 6.35624 7.29847 8.92967 7.72738C8.99024 7.73888 9.05262 7.73674 9.11225 7.72111C9.17189 7.70548 9.2273 7.67675 9.27444 7.63702C9.32158 7.59729 9.35927 7.54754 9.38477 7.49141C9.41027 7.43528 9.42295 7.37417 9.42186 7.31253V6.18753C9.42743 5.55035 9.68495 4.94126 10.1381 4.49333C10.5914 4.0454 11.2034 3.79502 11.8406 3.79691C12.301 3.80355 12.7499 3.94225 13.1338 4.19653C13.5177 4.4508 13.8205 4.80994 14.0062 5.23128C14.0383 5.30708 14.0922 5.37161 14.1611 5.41669C14.2299 5.46176 14.3107 5.48534 14.393 5.48441H15.8555L14.3086 7.03128Z"
+                                                        fill="currentColor" />
+                                                </svg></div>
+                                            <div class="text-meta">Twitter</div>
+                                        </div>
+                                        <div class="footer-social-item-icon-wrapper">
+                                            <div class="footer-social-item-icon w-embed"><svg width="18" height="18"
+                                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M18.5627 6V15.75C18.5627 15.8992 18.5034 16.0423 18.398 16.1477C18.2925 16.2532 18.1494 16.3125 18.0002 16.3125C17.851 16.3125 17.7079 16.2532 17.6025 16.1477C17.497 16.0423 17.4377 15.8992 17.4377 15.75V7.35938L6.39396 18.3937C6.28953 18.4982 6.14789 18.5568 6.00021 18.5568C5.85252 18.5568 5.71088 18.4982 5.60646 18.3937C5.50203 18.2893 5.44336 18.1477 5.44336 18C5.44336 17.8523 5.50203 17.7107 5.60646 17.6063L16.6408 6.5625H8.25021C8.10102 6.5625 7.95795 6.50324 7.85246 6.39775C7.74697 6.29226 7.68771 6.14918 7.68771 6C7.68771 5.85082 7.74697 5.70774 7.85246 5.60225C7.95795 5.49676 8.10102 5.4375 8.25021 5.4375H18.0002C18.1494 5.4375 18.2925 5.49676 18.398 5.60225C18.5034 5.70774 18.5627 5.85082 18.5627 6Z"
+                                                        fill="currentColor" />
+                                                </svg></div>
+                                        </div>
+                                    </a><a href="https://www.facebook.com/javans.dalmas?mibextid=ZbWKwL" target="_blank"
+                                        class="footer-social-item w-inline-block">
+                                        <div class="button-group">
+                                            <div class="icon-1x1-small w-embed"><svg width="20" height="20"
+                                                    viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M16.1719 9C16.1719 7.58154 15.7513 6.19493 14.9632 5.01552C14.1751 3.83611 13.055 2.91688 11.7446 2.37405C10.4341 1.83123 8.99205 1.68921 7.60084 1.96593C6.20963 2.24266 4.93173 2.92572 3.92872 3.92872C2.92572 4.93173 2.24266 6.20963 1.96593 7.60084C1.68921 8.99205 1.83123 10.4341 2.37405 11.7446C2.91688 13.055 3.83611 14.1751 5.01552 14.9632C6.19493 15.7513 7.58154 16.1719 9 16.1719C10.9015 16.17 12.7246 15.4138 14.0692 14.0692C15.4138 12.7246 16.17 10.9015 16.1719 9ZM9.42188 15.3141V10.5469H11.25C11.3619 10.5469 11.4692 10.5024 11.5483 10.4233C11.6274 10.3442 11.6719 10.2369 11.6719 10.125C11.6719 10.0131 11.6274 9.90581 11.5483 9.82669C11.4692 9.74758 11.3619 9.70313 11.25 9.70313H9.42188V7.875C9.42372 7.53991 9.55766 7.21906 9.79461 6.98211C10.0316 6.74516 10.3524 6.61122 10.6875 6.60938H11.8125C11.9244 6.60938 12.0317 6.56493 12.1108 6.48581C12.1899 6.4067 12.2344 6.29939 12.2344 6.1875C12.2344 6.07562 12.1899 5.96831 12.1108 5.88919C12.0317 5.81008 11.9244 5.76563 11.8125 5.76563H10.6875C10.1286 5.76748 9.59318 5.99031 9.198 6.3855C8.80281 6.78068 8.57998 7.31613 8.57813 7.875V9.70313H6.75C6.63812 9.70313 6.53081 9.74758 6.45169 9.82669C6.37258 9.90581 6.32813 10.0131 6.32813 10.125C6.32813 10.2369 6.37258 10.3442 6.45169 10.4233C6.53081 10.5024 6.63812 10.5469 6.75 10.5469H8.57813V15.3141C6.94 15.2046 5.40853 14.4628 4.30714 13.2453C3.20574 12.0277 2.62064 10.4298 2.6754 8.78896C2.73016 7.1481 3.42048 5.59274 4.6006 4.45135C5.78071 3.30996 7.35822 2.67189 9 2.67189C10.6418 2.67189 12.2193 3.30996 13.3994 4.45135C14.5795 5.59274 15.2699 7.1481 15.3246 8.78896C15.3794 10.4298 14.7943 12.0277 13.6929 13.2453C12.5915 14.4628 11.06 15.2046 9.42188 15.3141Z"
+                                                        fill="currentColor" />
+                                                </svg></div>
+                                            <div class="text-meta">Facebook</div>
+                                        </div>
+                                        <div class="footer-social-item-icon-wrapper">
+                                            <div class="footer-social-item-icon w-embed"><svg width="18" height="18"
+                                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M18.5627 6V15.75C18.5627 15.8992 18.5034 16.0423 18.398 16.1477C18.2925 16.2532 18.1494 16.3125 18.0002 16.3125C17.851 16.3125 17.7079 16.2532 17.6025 16.1477C17.497 16.0423 17.4377 15.8992 17.4377 15.75V7.35938L6.39396 18.3937C6.28953 18.4982 6.14789 18.5568 6.00021 18.5568C5.85252 18.5568 5.71088 18.4982 5.60646 18.3937C5.50203 18.2893 5.44336 18.1477 5.44336 18C5.44336 17.8523 5.50203 17.7107 5.60646 17.6063L16.6408 6.5625H8.25021C8.10102 6.5625 7.95795 6.50324 7.85246 6.39775C7.74697 6.29226 7.68771 6.14918 7.68771 6C7.68771 5.85082 7.74697 5.70774 7.85246 5.60225C7.95795 5.49676 8.10102 5.4375 8.25021 5.4375H18.0002C18.1494 5.4375 18.2925 5.49676 18.398 5.60225C18.5034 5.70774 18.5627 5.85082 18.5627 6Z"
+                                                        fill="currentColor" />
+                                                </svg></div>
+                                        </div>
+                                    </a>
+                                    </a></div>
+                            </div>
+                            <div class="footer-grid">
+                                <div id="w-node-b5b52b59-4abb-9bf8-96ee-df62d2534f84-3fd6c0e0" class="card muted">
+                                    <div class="card-padding vertical-stretch">
+                                        <div class="margin-bottom margin-huge"><a href="Home.html" aria-current="page"
+                                                class="w-inlinee w--current"><img
+                                                    src="Images\Branding Company logo.svg"
+                                                    loading="lazy" alt="Logo" /></a></div>
+                                        <div>
+                                            <div class="margin-bottom margin-xsmall"><a href="">
+                                                    <div class="button-inner">
+                                                       
+                                                        <div class="button-inner-icon-wrapper">
+                                                            <div class="button-inner-icon w-embed"></div>
+                                                        </div>
+                                                    </div>
+                                                </a></div>
+                                                <div class="text-meta-small">javansdalmas@gmail.com.
+                                            
+                                                </div>
+                                                <div class="text-meta-small">+254 701 467163.
+                                            
+                                                </div>
+                                            <div class="text-meta-small">© 2022 Nyateng Brands.
+                                            
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="w-node-b5b52b59-4abb-9bf8-96ee-df62d2534f91-3fd6c0e0" class="card muted">
+                                    <div class="card-padding">
+                                        <div class="footer-top-grid">
+                                            <div id="w-node-b5b52b59-4abb-9bf8-96ee-df62d2534f94-3fd6c0e0"
+                                                class="footer-column">
+                                                <div class="margin-bottom margin-medium">
+                                                    <h3 class="heading-style-h6 text-style-allcaps">Pages</h3>
+                                                </div>
+                                                <div class="nav"><a href="Home.html" aria-current="page"
+                                                        class="nav-item w-inline-block w--current">
+                                                        <div class="nav-item-text">Home</div>
+                                                        <div class="nav-item-line"></div>
+                                                    </a><a href="services.html" class="nav-item w-inline-block">
+                                                        <div class="nav-item-text">Services</div>
+                                                        <div class="nav-item-line"></div>
+                                                    </a><a href="About.html" class="nav-item w-inline-block">
+                                                        <div class="nav-item-text">About</div>
+                                                        <div class="nav-item-line"></div>
+                                                    </a>
+                                                        <a href="Contact.html" class="nav-item w-inline-block">
+                                                        <div class="nav-item-text">contact</div>
+                                                        <div class="nav-item-line"></div>
+                                                    </a></div>
+                                            </div>
+                                            <div id="w-node-b5b52b59-4abb-9bf8-96ee-df62d2534fb2-3fd6c0e0"
+                                                class="footer-column">
+                                                <div class="margin-bottom margin-medium">
+                                                    <h3 class="heading-style-h6 text-style-allcaps">CMS</h3>
+                                                </div>
+                                                <div class="nav"><a href="work.html" class="nav-item w-inline-block">
+                                                        <div class="nav-item-text">Work</div>
+                                                        <div class="nav-item-line"></div>
+                                                    </a>
+                                                        
+                                                    </a><a href="blog.html" class="nav-item w-inline-block">
+                                                        <div class="nav-item-text">Blog</div>
+                                                        <div class="nav-item-line"></div>
+                                                    </a>
+                                            </div>
+                                            
+                                                    
+                
+        </main>
+    </div>
+    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64426c1f54e5450712b7713b"
+        type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+    <script src="https://assets.website-files.com/64426c1f54e5450712b7713b/js/webflow.a5c371999.js"
+        type="text/javascript"></script>
+        <script>$(document).ready(function () { $(".w-webflow-badge").removeClass("w-webflow-badge").empty(); });
+        </script>  
+</body>
+
+</html>
